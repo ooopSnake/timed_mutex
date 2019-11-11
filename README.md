@@ -6,8 +6,14 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](https://github.com/ooopSnake/timed_mutex/pulls)
 [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://github.com/ooopSnake/timed_mutex/issues)
 
+## Usage
 
-## Getting Started
+```go
+import "github.com/ooopSnake/timed_mutex"
+```
+
+
+## Overview
 
 ### 📌 Lock()
 
@@ -25,9 +31,10 @@ try acquire a lock, `true` if lock obtained otherwise return `false ` immediatel
 ### 📌 TryLockTimeout(t time.Duration) (locked bool)
 
 try acquire a lock  in specified duration, `true` if lock obtained.
+
 return `false` if the mutex still unavailable until specified time point has been reached.
 
-## Example
+## Getting Started
 
 
 init lock 😏
